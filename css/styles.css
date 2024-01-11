@@ -347,14 +347,25 @@ a{
     width: 360px;
     height: 300px;
     background-color: #4D5AE5;
-    top: 100%;
+    top: 0;
     left: 0;
     padding-top: 40px;
+
+    transform: translateY(421px);
+    transition: transform 250ms ease-in-out;
 }
 
 .overflow__fill{
     width: 296px;
     margin: 0 auto;
+    font-size: 16px;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;
+    color: #fff;
+}
+
+.portfolio__card:hover .portfolio__overflow{
+    transform: translateY(0);
 }
 /*------------------------Footer---------------------------*/
 footer{
@@ -362,6 +373,11 @@ footer{
     color: #F4F4FD;
     padding-top: 100px;
     padding-bottom: 100px;
+}
+
+.footer>.container{
+    display: flex;
+    gap: 120px;
 }
 
 .footer__text{
@@ -376,5 +392,14 @@ footer{
 
 .footer .logo{
     display: inline-block;
+    margin-bottom: 16px;
+}
+
+.soc__text{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5; 
+    letter-spacing: 0.32px;
+    color: #fff;
     margin-bottom: 16px;
 }
